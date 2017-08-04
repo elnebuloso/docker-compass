@@ -1,12 +1,9 @@
-# system
 FROM ubuntu:16.04
 MAINTAINER jeff.tunessen@gmail.com
 
-# terminal
 ENV TERM linux
 ENV DEBIAN_FRONTEND noninteractive
 
-# install ansible
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         software-properties-common \
@@ -28,5 +25,7 @@ RUN apt-get update \
     && rm -rf /usr/share/locale/* \
     && rm -rf /tmp/*
 
-# change into /app for mounting project files
 WORKDIR /app
+
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]

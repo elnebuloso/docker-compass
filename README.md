@@ -2,9 +2,11 @@
 
 [![Docker Build Statu](https://img.shields.io/docker/build/elnebuloso/compass.svg)](https://hub.docker.com/r/elnebuloso/compass/builds/)
 
+- Compass 1.0.3 (Polaris)
 
-## Containers
+## Supported tags and respective `Dockerfile` links
 
+- [`Dockerfile`](https://github.com/elnebuloso/docker-compass/blob/master/Dockerfile)
 - https://hub.docker.com/r/elnebuloso/compass/tags/
 
 
@@ -39,4 +41,22 @@ services:
 ```text
 docker-compose run compass compass watch -c public/scss/config.rb --poll
 docker-compose run compass compass compile -c public/scss/config.rb
+```
+
+
+
+## Development
+
+### build container
+
+```text
+docker-compose up --build -d
+```
+
+### test container
+
+```text
+docker-compose run compass
+docker-compose run ubuntu14 ansible --version
+docker-compose run ubuntu14 ansible-playbook -i 'localhost,' -c local /etc/ansible/roles/demo-role/tests/test.yml
 ```

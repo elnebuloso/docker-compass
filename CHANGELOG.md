@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [1.1.0] - 2017-08-04
+### Added
+- Added docker-entrypoint.sh
+
+
 ## [1.0.0] - 2017-08-01
 ### Changed
 - Initial Release
