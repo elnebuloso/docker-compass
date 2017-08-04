@@ -25,7 +25,8 @@ RUN apt-get update \
     && rm -rf /usr/share/locale/* \
     && rm -rf /tmp/*
 
+COPY docker-entrypoint.sh /usr/local/bin/
+
 WORKDIR /app
 
-COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
