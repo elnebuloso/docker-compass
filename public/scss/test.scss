@@ -1,3 +1,17 @@
+@import "variables/_colors";
+
+.text1 {
+    color: $color-red;
+}
+
+.text1 {
+    color: $color-green;
+}
+
+.text2 {
+    color: $color-blue;
+}
+
 .image1 {
     background: #cccccc image-url("350x150.png") repeat-x scroll top center;
 }
