@@ -17,7 +17,7 @@ RUN apt-get update \
         ruby2.4-dev \
         build-essential \
     && gem install compass \
-    && chmod +x /usr/local/bin/docker-entrypoint.sh
+    && chmod +x /usr/local/bin/docker-entrypoint.sh \
     && apt-get -y autoremove \
     && apt-get -y clean \
     && rm -rf /var/cache/apt/archives/* \
