@@ -1,7 +1,7 @@
 version: "2"
 
 services:
-  compass:
+  scss:
     build:
       context: .
       dockerfile: Dockerfile

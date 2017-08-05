@@ -4,8 +4,6 @@ MAINTAINER jeff.tunessen@gmail.com
 ENV TERM linux
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY docker-entrypoint.sh /usr/local/bin/
-
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         software-properties-common \
@@ -17,7 +15,6 @@ RUN apt-get update \
         ruby2.4-dev \
         build-essential \
     && gem install compass \
-    && chmod +x /usr/local/bin/docker-entrypoint.sh \
     && apt-get -y autoremove \
     && apt-get -y clean \
     && rm -rf /var/cache/apt/archives/* \
@@ -30,4 +27,4 @@ RUN apt-get update \
 
 WORKDIR /app
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["sh"]

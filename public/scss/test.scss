@@ -23,3 +23,15 @@
 .image3 {
     background: #cccccc image-url("350x150.png") repeat-x scroll top center;
 }
+
+.foo {
+    color: $color-red;
+
+    .bar {
+        color: $color-green;
+    }
+
+    .baz {
+        color: $color-blue;
+    }
+}

@@ -1,6 +1,6 @@
 require 'compass/import-once/activate'
 
-project_path = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+project_path = File.expand_path(File.join(File.dirname(__FILE__)))
 
 http_path   = "/"
 css_dir     = "css"

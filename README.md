@@ -12,30 +12,30 @@
 ### compass compile (example)
 
 ```text
-docker run -v ${PWD}:/app elnebuloso/compass:1.2.0 compile -c public/scss/config.rb
+docker run -v ${PWD}:/app elnebuloso/compass:1.0.0 compass compile public
 ```
 
 ### compass watch (example)
 
 ```text
-docker run -v ${PWD}:/app elnebuloso/compass:1.2.0 watch -c public/scss/config.rb --poll
+docker run -v ${PWD}:/app elnebuloso/compass:1.0.0 compass watch public --poll
 ```
 
-## docker-compose
+## docker-compose (example)
 
 ```text
 version: "2"
 
 services:
-  compass:
-    image: elnebuloso/compass:1.2.0
+  scss:
+    image: elnebuloso/compass:1.0.0
     volumes:
       - .:/app
 ```
 
 ```text
-docker-compose run compass compile -c public/scss/config.rb
-docker-compose run compass watch -c public/scss/config.rb --poll
+docker-compose run scss compass compile public
+docker-compose run scss compass watch public --poll
 ```
 
 ## Development
@@ -49,16 +49,16 @@ docker-compose up --build -d
 ### test container
 
 ```text
-docker-compose run compass
-docker-compose run compass --version
-docker-compose run compass compile -c public/scss/config.rb
-docker-compose run compass watch -c public/scss/config.rb --poll
+docker-compose run scss
+docker-compose run scss compass --version
+docker-compose run scss compass compile public
+docker-compose run scss compass watch public --poll
 ```
 
 ### local build test
 
 ```text
 docker build -t foo .
-docker run -v ${PWD}/public:/app/public foo:latest compile -c public/scss/config.rb
-docker run -v ${PWD}/public:/app/public foo:latest watch -c public/scss/config.rb --poll
+docker run -v ${PWD}/public:/app/public foo:latest compass compile public
+docker run -v ${PWD}/public:/app/public foo:latest compass watch public --poll
 ```
