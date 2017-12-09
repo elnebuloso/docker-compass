@@ -25,6 +25,4 @@ RUN apt-get update \
     && rm -rf /usr/share/locale/* \
     && rm -rf /tmp/*
 
-WORKDIR /app
-
 CMD ["sh"]
