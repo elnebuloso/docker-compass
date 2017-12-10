@@ -31,9 +31,12 @@ case "$1" in
         docker tag compass-latest elnebuloso/compass:1.0.3
         docker tag compass-latest elnebuloso/compass:1.0
         docker tag compass-latest elnebuloso/compass:1
+        docker tag compass-latest elnebuloso/compass
+
         docker push elnebuloso/compass:1.0.3
         docker push elnebuloso/compass:1.0
         docker push elnebuloso/compass:1
+        docker push elnebuloso/compass
     ;;
 
     *)
