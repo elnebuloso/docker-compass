@@ -25,5 +25,5 @@ docker run -v ${PWD}:/app elnebuloso/compass compass compile /app/public
 ## compass watch (example)
 
 ```text
-docker run -v ${PWD}:/app elnebuloso/compass compass compile /app/public --poll
+docker run -v ${PWD}:/app elnebuloso/compass compass watch /app/public --poll
 ```
