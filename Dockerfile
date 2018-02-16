@@ -14,6 +14,7 @@ RUN apt-get update \
         ruby2.4 \
         ruby2.4-dev \
         build-essential \
+        libffi-dev \
     && gem install compass \
     && apt-get -y autoremove \
     && apt-get -y clean \
