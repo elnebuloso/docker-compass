@@ -1,13 +1,13 @@
 #/bin/bash
 
 case "$1" in
-    start)
+    create)
         docker-compose pull
         docker-compose up --build --remove-orphans -d scss
         docker-compose run scss compass --version | grep -Po "^Compass (\d+\.)+\d+" | sed 's!Compass !!g'
     ;;
 
-    stop)
+    remove)
         docker-compose down --remove-orphans
     ;;
 
@@ -20,12 +20,11 @@ case "$1" in
     ;;
 
     *)
-        clear
         echo ""
-        echo "- start           Start all containers"
-        echo "- stop            Stop all containers"
-        echo "- test.compile    Test Compass Compile"
-        echo "- test.watch      Test Compass Watch"
+        echo "- create          create all containers"
+        echo "- remove          remove all containers"
+        echo "- test.compile    test compass Compile"
+        echo "- test.watch      test compass Watch"
         echo ""
     ;;
 esac
