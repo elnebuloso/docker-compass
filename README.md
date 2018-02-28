@@ -12,8 +12,6 @@ See Supported Tags at https://hub.docker.com/r/elnebuloso/compass/tags/
 
 - [`latest` `1` `1.0` `1.0.3` (Dockerfile)](https://github.com/elnebuloso/docker-compass/blob/master/Dockerfile)
 
-See full project details at https://github.com/elnebuloso/docker-compass
-
 
 ## compass compile (example)
 
