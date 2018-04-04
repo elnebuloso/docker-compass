@@ -8,11 +8,6 @@ Compass SCSS Container
 See Supported Tags at https://hub.docker.com/r/elnebuloso/compass/tags/
 
 
-#### Supported tags and respective `Dockerfile` links
-
-- [`latest` `1` `1.0` `1.0.3` (Dockerfile)](https://github.com/elnebuloso/docker-compass/blob/master/Dockerfile)
-
-
 ## compass compile (example)
 
 ```text
