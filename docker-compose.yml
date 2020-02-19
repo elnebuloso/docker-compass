@@ -1,9 +1,10 @@
 version: "2"
 
 services:
-  scss:
+  main:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./public:/app/public
+    working_dir: /app/public

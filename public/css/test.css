@@ -1,0 +1,42 @@
+/* line 3, ../scss/test.scss */
+.text1 {
+  color: #ff0000;
+}
+
+/* line 7, ../scss/test.scss */
+.text2 {
+  color: #00ff00;
+}
+
+/* line 11, ../scss/test.scss */
+.text3 {
+  color: #0000ff;
+}
+
+/* line 15, ../scss/test.scss */
+.image1 {
+  background: #cccccc url('../images/350x150.png?1560162384') repeat-x scroll top center;
+}
+
+/* line 19, ../scss/test.scss */
+.image2 {
+  background: #cccccc url('../images/350x150.png?1560162384') repeat-x scroll top center;
+}
+
+/* line 23, ../scss/test.scss */
+.image3 {
+  background: #cccccc url('../images/350x150.png?1560162384') repeat-x scroll top center;
+}
+
+/* line 27, ../scss/test.scss */
+.foo {
+  color: #ff0000;
+}
+/* line 30, ../scss/test.scss */
+.foo .bar {
+  color: #00ff00;
+}
+/* line 34, ../scss/test.scss */
+.foo .baz {
+  color: #0000ff;
+}

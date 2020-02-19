@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [1.4.0] - 2019-02-29
+### Changed
+- github actions
+
+
 ## [1.3.0] - 2018-02-28
 ### Changed
 - switched to alpine

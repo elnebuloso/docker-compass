@@ -11,7 +11,7 @@ RUN apk add --update \
     && gem install \
         listen \
         sass \
-        compass --no-ri --no-rdoc \
+        compass \
     && apk del \
         build-base \
         libffi-dev \
