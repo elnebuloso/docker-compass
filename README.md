@@ -1,4 +1,11 @@
+<img src="https://raw.githubusercontent.com/elnebuloso/docker-compass/master/logo.png" width="100%"/>
+
 # docker-compass
+
+![Release](https://github.com/elnebuloso/docker-compass/workflows/Release/badge.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/elnebuloso/compass.svg)](https://hub.docker.com/r/elnebuloso/compass)
+[![GitHub](https://img.shields.io/github/license/elnebuloso/docker-compass.svg)](https://github.com/elnebuloso/docker-compass)
+
 
 Dockerized Compass SCSS Container
 
