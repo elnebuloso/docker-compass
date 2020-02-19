@@ -6,7 +6,6 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/elnebuloso/compass.svg)](https://hub.docker.com/r/elnebuloso/compass)
 [![GitHub](https://img.shields.io/github/license/elnebuloso/docker-compass.svg)](https://github.com/elnebuloso/docker-compass)
 
-
 Dockerized Compass SCSS Container
 
 ## github
