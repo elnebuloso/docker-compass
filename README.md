@@ -15,7 +15,8 @@ Dockerized Compass SCSS Container
 ## docker
 
 - https://hub.docker.com/r/elnebuloso/compass
-- https://hub.docker.com/r/elnebuloso/compass/tags
+- https://hub.docker.com/r/elnebuloso/compass/tags?page=1&ordering=last_updated
+- weekly builds, 0 0 * * 0
 
 ## compass compile (example)
 
